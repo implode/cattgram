@@ -1,0 +1,14 @@
+name = "cattgram"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-11-01"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[vars]
+GRAPHQL_DOC_ID = "8845758582119845"
+# Alt doc_id: "8845758582119845", "10015901848480474" (instagram-media-scraper)
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "22e191f2c2c74f088f11afcc81250752"
